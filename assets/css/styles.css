@@ -19,6 +19,10 @@ a {
 	color: #fff;
 }
 
+em {
+  color: #0099ff;
+}
+
 a:hover {
     opacity: 1;    
 }
@@ -77,10 +81,23 @@ section {
     justify-content: space-between;    
 }
 
+.main-content-area ul li:first-child {
+  -moz-animation: bounce 2s 0.5s infinite;
+  -webkit-animation: bounce 2s 0.5s infinite;
+  animation: bounce 2s 0.5s infinite;
+}
+
+.main-content-area ul li:first-child:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+
 .main-content-area ul li:last-child {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
+    -moz-animation: bounce 2s 1s infinite;
+    -webkit-animation: bounce 2s 1s infinite;
+    animation: bounce 2s 1s infinite;
 }
 
 .main-content-area ul li:last-child:hover {
@@ -103,12 +120,12 @@ section {
       transform: translateY(0);
     }
     40% {
-      -moz-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-    60% {
       -moz-transform: translateY(-4px);
       transform: translateY(-4px);
+    }
+    60% {
+      -moz-transform: translateY(-2px);
+      transform: translateY(-2px);
     }
   }
   @-webkit-keyframes bounce {
@@ -117,12 +134,12 @@ section {
       transform: translateY(0);
     }
     40% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-    60% {
       -webkit-transform: translateY(-4px);
       transform: translateY(-4px);
+    }
+    60% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
     }
   }
   @keyframes bounce {
@@ -133,16 +150,16 @@ section {
       transform: translateY(0);
     }
     40% {
-      -moz-transform: translateY(-8px);
-      -ms-transform: translateY(-8px);
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-    60% {
       -moz-transform: translateY(-4px);
       -ms-transform: translateY(-4px);
       -webkit-transform: translateY(-4px);
       transform: translateY(-4px);
+    }
+    60% {
+      -moz-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
     }
   }
 
